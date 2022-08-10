@@ -1,0 +1,105 @@
+
+/* =============== REUSABLE STYLES ===============  */
+
+
+/* Typography */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 80px;
+    text-align: center;
+}
+
+h2 {
+      font-size: 56;
+      font-weight: 500;
+}
+
+h3 {
+    font-size: 48;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 40;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 32;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 24;
+    font-weight: 500;
+}
+
+.body-subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+}
+
+.body-normal {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+}
+
+.body-small {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+}
+
+/* Colour */
+:root {
+    --brand-color: #1842D3;
+    --ui-black: #030303;
+    --ui-dark-grey: #545353;
+    --ui-med-grey: #ACA7A7;
+    --ui-light-grey:#F4F4F4;
+    --ui-white: #ffffff;
+ }
+
+
+
+/* Borders */
+.border-top {
+      border-top: 1px solid var(--ui-black);
+}
+
+.border-left {
+    border-left: 1px solid var(--ui-black);
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--ui-black);
+}
+
+.border-right {
+    border-right: 1px solid var(--ui-black);
+}
+
+
+
+/* =============== SPACING AND ALIGNMENT ===============  */
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
