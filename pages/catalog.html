@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="shortcut icon" href="../images/general/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/boxes.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/filter.css">
+    
+    
+    <title>UIBoat</title>
+
+    <style>
+      #catalog {
+        color: var(--ui-black);
+      }
+    </style>
+</head>
+<body>
+
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+    </div>
+
+  
+    <h1>Kits, guides + more</h1>
+
+
+
+    <ul class="filtermenu border-bottom border-top">
+      <li data-filter="all">All</li>
+      <li data-filter="kits">UI kits</li>
+      <li data-filter="productivity">Productivity</li>
+      <li data-filter="jobs">Jobs</li>
+      <li data-filter="freelancing">Freelancing</li>
+      <li data-filter="freebies">Freebies</li>
+    </ul>
+    <div class="filter-container">
+      <div class="post kits">
+        <div class="post-thumb"><img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="" /></div>
+        <div class="post-title">Title</div>
+        <div class="post-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
+      </div>
+      <!-- /post -->
+      <div class="post productivity">
+        <div class="post-thumb"><img src="https://placehold.jp/250x150.png" alt="" /></div>
+        <div class="post-title">Title</div>
+        <div class="post-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
+      </div>
+      <!-- /post -->
+      <div class="post productivity">
+        <div class="post-thumb"><img src="https://placehold.jp/250x150.png" alt="" /></div>
+        <div class="post-title">Title</div>
+        <div class="post-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
+      </div>
+      <!-- /post -->
+      <div class="post productivity">
+        <div class="post-thumb"><img src="https://placehold.jp/24/2c66c3/ffffff/250x150.png" alt="" /></div>
+        <div class="post-title">Title</div>
+        <div class="post-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
+      </div>
+      <!-- /post -->
+      <div class="post productivity">
+        <div class="post-thumb"><img src="https://placehold.jp/250x150.png" alt="" /></div>
+        <div class="post-title">Title</div>
+        <div class="post-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
+      </div>
+      <!-- /post -->
+      <div class="post jobs">
+        <div class="post-thumb"><img src="https://placehold.jp/24/2c66c3/ffffff/250x150.png" alt="" /></div>
+        <div class="post-title">Title</div>
+        <div class="post-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
+      </div>
+      <!-- /post -->
+      <div class="post freelancing">
+        <div class="post-thumb"><img src="https://placehold.jp/24/2c66c3/ffffff/250x150.png" alt="" /></div>
+        <div class="post-title">Title</div>
+        <div class="post-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
+      </div>
+      <!-- /post -->
+      <section class="post freelancing">  
+        <article>
+            <div class="border-top border-bottom row-2-el-box">
+            <div  class="padding-80 small-spacing">
+              <h5>Codigma: from figma to code in a matter of minutes</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium feugiat et quis euismod congue id. </p>          
+            </div>
+           
+            <div class="border-left">
+              <img class="box-img padding-80" src="../images/test.png" alt="">
+            </div>
+          </div>
+    
+        </article>
+        <a class="secondaryButton border-bottom" href="">Learn more <img src="images/general/secondaryArrow.svg" alt=""></a>
+     
+    </section>
+    <!-- partial -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+
+
+  <div id="footer-placeholder">
+  </div>
+
+
+<script src="../scripts/filter.js"></script>  
+
+<!--Calling components-->
+<script>
+$(function(){
+  $("#nav-placeholder").load("../components/nav.html");
+});
+
+$(function(){
+  $("#footer-placeholder").load("../components/footer.html");
+});
+</script>
+<!--Calling components-->
+
+<script src="../scripts/navigation.js"></script>
+
+</body>
+</html>

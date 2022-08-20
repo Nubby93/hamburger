@@ -8,60 +8,70 @@
 
 body {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 18px;
+    font-size: min(max(1rem, 4vw), 22px);
     font-weight: 400;
 }
 
 h1 {
-    font-size: 64px;
+    font-size: min(max(3.5rem, 4vw), 72px);
     font-weight: 500;
     line-height: 80px;
     text-align: center;
+    margin: 160px 20vw;
 }
 
 h2 {
-      font-size: 56;
+    font-size: min(max(3rem, 4vw), 64px);
       font-weight: 500;
 }
 
 h3 {
-    font-size: 48;
+    font-size: min(max(2.5rem, 4vw), 56px);
     font-weight: 500;
 }
 
 h4 {
-    font-size: 40;
+    font-size: min(max(2rem, 4vw), 48px);
     font-weight: 500;
 }
 
 h5 {
-    font-size: 32;
+    font-size: min(max(1.5rem, 4vw), 40px);
     font-weight: 500;
+    margin: 0;
+    padding: 0;
 }
 
 h6 {
-    font-size: 24;
+    font-size: min(max(1.375rem, 4vw), 32px);
     font-weight: 500;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
+    color: var(--ui-black);
 }
 
 .body-subtitle {
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 27px;
     letter-spacing: 0em;
 }
 
-.body-normal {
-    font-size: 18px;
+p {
+    font-size: min(max(1rem, 4vw), 22px);
     font-weight: 400;
     line-height: 27px;
     letter-spacing: 0em;
+    margin: 0;
+    padding: 0;
+    color: var(--ui-dark-grey);
 }
 
 .body-small {
     font-size: 14px;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 30px;
     letter-spacing: 0em;
 }
 
@@ -74,6 +84,16 @@ h6 {
     --ui-light-grey:#F4F4F4;
     --ui-white: #ffffff;
  }
+
+
+a {
+    text-decoration: none;
+    color: var(--ui-black);
+}
+
+li {
+    list-style: none;
+}
 
 
 
@@ -103,3 +123,118 @@ h6 {
     align-items: center;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 160px;
+}
+
+
+/* =============== buttons ===============  */
+
+* {
+    box-sizing: border-box;
+  }
+  *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  button.learn-more {
+    width: 12rem;
+    height: auto;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: var(--ui-black);
+    border-radius: 1.625rem;
+  }
+  button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+  }
+  button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    /* text-transform: uppercase; */
+  }
+  button:hover .circle {
+    width: 100%;
+  }
+  button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+  }
+  button:hover .button-text {
+    color: #fff;
+  }
+  
+
+
+.secondaryButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 40px 20px;
+}
+
+.secondaryButton:hover {
+    background-color: var(--ui-light-grey);
+    padding: 40px 16px 40px 20px;
+    column-gap: 28px;
+}

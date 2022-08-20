@@ -1,0 +1,29 @@
+nav {
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+  color: var(--ui-med-grey) !important;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.listStyle {
+  color: var(--ui-med-grey);
+}
+.listStyle:hover {
+  color: var(--ui-black);
+}
+
+
+
+
+
+

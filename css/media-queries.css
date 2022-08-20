@@ -1,0 +1,42 @@
+
+
+/* Boxes  */
+
+ @media only screen and (max-width: 999px) {
+
+    .row-2-el-box{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .border-left {
+        border-left: none;
+    }
+
+    img.padding-80  {
+        padding-bottom: 0px;
+        margin-bottom: -20px;
+    }
+  } 
+
+
+
+  @media only screen and (max-width: 850px) {
+
+    button {
+        display: none;
+    }
+
+    h1 {
+        margin: 160px 10vw;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+  .socialbtns ul {
+    display: flex;
+    flex-direction: row;
+   column-gap: 20px;
+    }  
+}

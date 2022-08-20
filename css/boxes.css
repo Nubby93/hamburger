@@ -1,0 +1,46 @@
+
+/* padding & spacing */
+.padding-80-40 {
+    padding: 40px 80px;
+}
+
+.padding-80 {
+    padding: 80px;
+}
+
+/* Flexbox */
+
+.col-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.small-spacing {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+
+
+.row-2-el-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Sizes for boxes */
+.width-half {
+    width: 50vw;
+}
+
+.box-img {
+    max-width: 100%;
+    height: auto;
+}
+
