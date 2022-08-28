@@ -11,7 +11,7 @@ nav {
   flex-direction: row;
   column-gap: 40px;
   color: var(--ui-med-grey) !important;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
 }
 
